@@ -1,0 +1,78 @@
+body {
+    background-color: #F3C5C5;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-family: arial, sans-serif;
+  
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  footer {
+    color: black;
+  }
+  
+  /* background-color classes */
+  .dark-div {
+    background-color: #886F6F;
+  }
+  
+  .bright-div {
+    background-color: #C1A3A3;
+  }
+  
+  /* header class */
+  
+  .title {
+    padding: 5px;
+    border: 2px solid black;
+  }
+  
+  
+  /* Classes from videogame section */ 
+  
+  .videogameitem {
+    padding: 10px;
+  }
+  
+  .videogamelist {
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+  
+  .images {
+    width: 400px;
+    padding: 20px;
+  }
+  
+  
+  .name {
+    background-color: #694E4E;
+    display: inline-block;
+    width: 150px;
+    margin: 0px auto;
+    padding: 10px 20px;
+    text-decoration: inherit;
+    color: inherit;
+  }
+  
+  /* pseudo classes applied to the buttons and images */ 
+  
+  .name:hover, .name:focus {
+    background-color: rgb(95, 50, 78);
+    cursor: pointer;    
+  }
+  
+  .images:hover {
+    transform: scale(1.10);
+  }
+  
+  
+  
+  
+  
+  
