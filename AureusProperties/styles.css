@@ -177,15 +177,14 @@ form {
 .aureus-contact-list li {
     margin: 1em 0;
     padding: 0;
-    display: flex; a
-
+    display: flex; 
 }
 
 .contact-icons {
     width: 18px;
     min-width: 18px;
     margin-right: 0.5em;
-    
+ 
 }
 
 
