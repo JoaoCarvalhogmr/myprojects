@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
     background-color: #F3C5C5;
     padding: 20px;
@@ -5,15 +9,27 @@ body {
     text-align: center;
     margin: 0;
     font-family: arial, sans-serif;
-  
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "header header header header"
+      "main main main main"
+      "main main main main"
+      "footer footer footer footer";
   }
   
   li {
     list-style: none;
   }
+
+  header {
+    grid-area: header;
+  }
   
   footer {
     color: black;
+    grid-area: footer;
   }
   
   /* background-color classes */
@@ -28,7 +44,6 @@ body {
   /* header class */
   
   .title {
-    padding: 5px;
     border: 2px solid black;
   }
   
@@ -36,7 +51,12 @@ body {
   /* Classes from videogame section */ 
   
   .videogameitem {
-    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+
   }
   
   .videogamelist {
@@ -45,8 +65,8 @@ body {
   }
   
   .images {
-    width: 400px;
-    padding: 20px;
+    width: 300px;
+    object-fit: cover; 
   }
   
   
@@ -59,6 +79,10 @@ body {
     text-decoration: inherit;
     color: inherit;
   }
+
+  .action-rpg {
+    grid-area: main;
+  }
   
   /* pseudo classes applied to the buttons and images */ 
   
@@ -70,7 +94,6 @@ body {
   .images:hover {
     transform: scale(1.10);
   }
-  
   
   
   
