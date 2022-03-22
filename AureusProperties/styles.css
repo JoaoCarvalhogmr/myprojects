@@ -11,8 +11,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 1.6;
-    height: 100vh;
-    width: 100vw;
+
 }
 
 
@@ -184,12 +183,15 @@ form {
 .aureus-contact-list {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    
 }
 
-.aureus-contact-list li {
-    margin: 1em 0;
+.aureus-contact-list-item{
     padding: 0;
-    display: flex; 
+    margin: 0.3em 0;
 }
 
 .contact-icons {
@@ -220,7 +222,7 @@ footer {
     margin: auto 0;
 }
 
-.socialicons {
+.social-icons {
     width: 30px;
     margin-left: 0.75em;
 }
