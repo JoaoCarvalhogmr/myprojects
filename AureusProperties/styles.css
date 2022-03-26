@@ -54,6 +54,10 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
 }
 
 
@@ -79,9 +83,12 @@ nav {
 .site-logo {
     width: 15%;
     min-width: 200px;
+    transition: opacity 300ms;
+
 }
 
 .site-logo:hover, .site-logo:focus {
+    opacity: 0.5;
 } 
 
 img {
@@ -90,6 +97,10 @@ img {
 }
 
 /* main */
+
+main {
+    padding-top: 7em;
+}
 
 .main-home-container {
     width: 57%;
@@ -247,7 +258,6 @@ footer {
 @media (max-width: 600px) {
     .site-logo {
         width: 150px;
-        border: 1px solid black;
     }
 
     .nav-list,
@@ -270,6 +280,7 @@ footer {
     
     header {
         padding: 2.3em;
+        position: static;
     }
 
     h1 {
@@ -282,15 +293,18 @@ footer {
         margin-bottom: 0;
     }
 
+    main {
+        padding-top:0;
+    }
+
     .main-home-container {
         width: 50%;
-        border: 1px solid black;
         padding-bottom: 0;
     }
 
 }
 
-@media (min-width: 590px) and (max-width: 880px) {
+@media (min-width: 590px) and (max-width: 1065px) {
     .site-logo {
         width: 15%;
     }
@@ -311,8 +325,13 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         padding: 0 1em;
+        position: static;
     }
 
+    main {
+        padding-top: 0;
+    }
+    
     h1 {
         font-size: 4rem;
     }
