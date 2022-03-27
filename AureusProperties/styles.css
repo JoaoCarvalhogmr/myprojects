@@ -304,7 +304,7 @@ footer {
 
 }
 
-@media (min-width: 590px) and (max-width: 1065px) {
+@media (min-width: 601px) and (max-width: 1065px) {
     .site-logo {
         width: 15%;
     }
