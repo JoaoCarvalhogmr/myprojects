@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background: rgb(181, 162, 162);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+
+main {
+  padding: 2em;
+}
+

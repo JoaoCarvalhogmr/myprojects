@@ -1,0 +1,32 @@
+.home {
+    width: 700px;
+    height: 70vh;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    text-shadow:1px 1px #666;
+    color: inherit;
+    
+}
+
+.home h1 {
+    font-size: 4.5rem;
+}
+
+.home h2 {
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+@media (max-width: 800px) {
+    .home h1 {
+        font-size: 4em;
+    }
+
+    .home h2 {
+        font-size: 2em;
+    }
+}
