@@ -1,0 +1,21 @@
+.App {
+  line-height: 1.5;
+  background: rgb(181, 162, 162);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-weight: 700
+}
+
+
+main {
+  padding: 2em;
+
+}
+

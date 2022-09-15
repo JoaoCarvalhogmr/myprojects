@@ -172,24 +172,47 @@ main {
 /* main-contact-container styling */
 .main-contact-container {
     padding: 1rem;
-    margin:  10px auto;
+    margin:  5px auto;
     width: 50%;
 }
 
 form {
-    margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1em;
 }
-    
 
-#message {
-    margin-top: 1em;
-    display: block;
-    
-}    
 
-.form-box {
-    margin: 1em 0;
+
+.name-box {
+    grid-column: 1/-1;
 }
+
+.email-box {
+    grid-column: 1/-1;
+}
+
+.email-box label, 
+.name-box label {
+    margin-right: 0.5em;
+}
+
+.message-box {
+    grid-column: 1;
+}
+
+input {
+    font-family: inherit;
+}
+
+.btn-form {
+    margin-bottom: 10px;
+}
+
+.contact-title {
+    padding-bottom: 1em;
+}
+
 
 .aureus-contact-list {
     list-style: none;
