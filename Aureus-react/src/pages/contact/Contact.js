@@ -5,10 +5,10 @@ export default function Contact() {
   return (
     <main>
       
-      <div className={classes.contactUs}> 
+      <div className={classes["contact-us"]}> 
         <form action="https://getform.io/f/7752a244-33a5-4d0f-adff-1adcbbf86b34" method="POST">
           <h2>Contact Form</h2>
-          <div className={classes.formControl}>
+          <div className={classes["form-control"]}>
             <label htmlFor='username'>Name</label>
             <input id="username" name="username" type="text" required />
 
@@ -20,7 +20,7 @@ export default function Contact() {
           </div>
         <button type="submit" value="submit">Submit</button>
       </form>
-      <div className={classes.contactList}>
+      <div className={classes["contact-list"]}>
         <h2>Our Contacts</h2>
         <ul>
           <li><span>Address:</span> Calçada da Senhora da Luz, nº408, 4835-112 Guimarães - Portugal</li>
